@@ -7,7 +7,13 @@
         if user exists; checks if localadmin.
         if or if not localadmin, resets password with generated.
         if not localadmin; turns into localadmin.
+        Place user name and generated password in NinjaRMM Custom Attributes ( Administrators ) ( GeneratePassword )
+    .NOTES
 
+        You must create the custom attributes ( Administrators ) ( GeneratePassword ) in NinjaRMM first.
+        ************************************************************************************************
+        Administration > Devices > Global Custom Fields > Add > Select Field Type ( Text ) > Create
+        
     .INPUTS
 
         Requires NinjaRMM parameter ( Type in a username in param before running script )
