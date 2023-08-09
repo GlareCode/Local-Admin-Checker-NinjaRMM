@@ -13,7 +13,8 @@
 
         You must create the custom attributes ( Administrators ) ( GeneratePassword ) in NinjaRMM first.
         ************************************************************************************************
-        Administration > Devices > Global Custom Fields > Add > Select Field Type ( Text ) > Create
+        Administration > Devices > Global Custom Fields > Add > Name = Administrators > Select Field Type ( Text ) > Create
+        Administration > Devices > Global Custom Fields > Add > Name = GeneratePassword > Select Field Type ( Text ) > Create
         
     .INPUTS
 
