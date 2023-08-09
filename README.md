@@ -33,6 +33,9 @@
         "An error occured in Find-LocalAdmin...Exiting - 01"
 
     .EXAMPLE
+        
         PS> Find-LocalAdmin
+        
+        Run/PlayButton > Run Script > From Library > "TheNameYouChose" > Preset Parameter = "TheParameterYouSet" > Run As = "System" > Apply
 
 #>
