@@ -1,4 +1,5 @@
 <#
+    
     .SYNOPSIS
 
         finds a user in NinjaRMM parameter
