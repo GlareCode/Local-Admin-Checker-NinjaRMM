@@ -1,34 +1,29 @@
 <#
     .SYNOPSIS
 
-        finds a user.
+        finds a user in NinjaRMM parameter
         if not a user; creates user.
-        if user exist; checks if localadmin.
+        if user exists; checks if localadmin.
+        if or if not localadmin, resets password with generated.
         if not localadmin; turns into localadmin.
 
     .INPUTS
 
-        None. but alter the '$who' variable in function 'find-localAdmins' to reflect the user you're interested in.
+        Requires NinjaRMM parameter ( Type in a username in param before running script )
 
     .OUTPUTS
 
-        Has four outputs.
-        1: '$gen' calls function 'generate-password' and '$gen' will not change unless function 'create-localAdmin' is called again.
-        2: function 'create-localAdmin' will print if '$who' is not a user.
-        3: function 'check-localAdmins' will print if '$who' is or is not a localadmin.
+        "Setting NinjaRMM Custom Attribute (Administrators)"
+        "Setting NinjaRMM Custom Attribute (GeneratePassword)"
+        "$User Exists"
+        "$User does not exist"
+        "Trying to make $User Admin..."
+        "An error occured in Find-LocalAdmin...Exiting - 00"
+        "Something unexpected happend in Find-LocalAdmin...Exiting - 00"
+        "Something unexpected happend in Find-LocalAdmin...Exiting - 01"
+        "An error occured in Find-LocalAdmin...Exiting - 01"
 
     .EXAMPLE
+        PS> Find-LocalAdmin
 
-        $who is not a user, creating user now...
-        $who is already a local administrator
-        $who is not a local administrator
-
-    .EXAMPLE
-
-        PS> find-localAdmins
-
-    .LINK
-        
 #>
-
-This script also features NinjaRMM Custom Fields options on lines 52 and 109.
