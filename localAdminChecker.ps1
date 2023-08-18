@@ -172,10 +172,14 @@ function Find-LocalAdmin {
 
             try {
                 # Set Ninja Custom Attributes
+                $findAdmin | Select-Object -ExpandProperty Name
+                Ninja-Property-Set Administrators $findAdmin
+
                 Write-Host "Setting NinjaRMM Custom Attribute (GeneratePassword)"
                 Ninja-Property-Set generatepassword $acc
+                
                 Write-Host "Setting NinjaRMM Custom Attribute (Administrators)"
-                Ninja-Property-Set administrators $variable1
+                Ninja-Property-Set Administrators $findAdmin
             }
             catch {
                 return "An error occured in Find-LocalAdmin...Exiting - 02"
