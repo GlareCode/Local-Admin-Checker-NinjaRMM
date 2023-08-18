@@ -172,9 +172,7 @@ function Find-LocalAdmin {
 
             try {
                 # Set Ninja Custom Attributes
-                $findAdmin = Get-WmiObject -Class Win32_UserAccount -Filter "LocalAccount='$true'" | Select-Object Name, Disabled | Where-Object Disabled -eq $False | Select-Object Name
-                $findAdmin | Select-Object -ExpandProperty Name
-                Ninja-Property-Set Administrators $findAdmin
+                $findAdmin = Get-WmiObject -Class Win32_UserAccount -Filter "LocalAccount='$true'" | Select-Object Name, Disabled | Where-Object Disabled -eq $False | Select-Object -expandproperty Name
 
                 Write-Host "Setting NinjaRMM Custom Attribute (GeneratePassword)"
                 Ninja-Property-Set generatepassword $acc
