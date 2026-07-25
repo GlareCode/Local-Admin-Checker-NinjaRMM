@@ -13,7 +13,7 @@
   -   **String/Text**: AUserName
   -   **String/Text**: NinjaProperty
 5. You will need to create your device custom fields.  Please go to Administration > Devices > Device Custom Fields > Add Custom Field
-   **Type**: Text
+  - **Type**: Text
   - Enheritance > Enable Enheritance for Device
   - Permissions > Automations: Read/Write
 
