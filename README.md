@@ -1,6 +1,6 @@
 ### Usage
 
-1. Copy the code from this repositories **.ps1** file labeled **localAdminChecker.ps1**.
+1. Copy the code from this repositories **.ps1** file labeled **CreateLocalAdministrator.ps1**.
 2. In NinjaRMM, go to Administration > Library > Automation > Add Automation > New Script
 3. Paste the script contents directly inside of the NinjaRMM text editor.
 4. Copy the script settings from the image below. (
