@@ -16,7 +16,6 @@
    **Type**: Text
   - Enheritance > Enable Enheritance for Device
   - Permissions > Automations: Read/Write
-  - Permissions > API: Read/Write
 
 ### Your NinjaONE RMM parameters should resemble the below.
 
