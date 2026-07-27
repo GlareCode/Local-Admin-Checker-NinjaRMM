@@ -68,7 +68,7 @@ function Find-LocalAdmin {
             Write-Host "Creating $AUserName`n"
             Write-Host "Generating password...`n"
             $GeneratedString = Get-Password
-            & net user $AUserName $GeneratedString /add
+            & net user $AUserName $GeneratedString
             Write-Host "Adding $AUserName to the local administrators Group`n"
             & net localgroup Administrators $AUserName /add
         }
